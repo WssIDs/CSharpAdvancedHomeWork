@@ -8,6 +8,8 @@
         Queue,
         HashTable,
         Dictionary,
-        LinkedList
+        LinkedList,
+        UserCollection,
+        GenericClass
     }
 }

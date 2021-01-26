@@ -71,6 +71,9 @@ namespace Utils.Menu
             _height = Console.WindowHeight;
             _width = Console.WindowWidth;
 
+            Position = 0;
+            Type = _menuItems[Position].Type;
+
             Console.Title = title;
             Console.Clear();
         }
