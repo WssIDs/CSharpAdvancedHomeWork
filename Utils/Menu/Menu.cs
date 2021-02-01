@@ -19,7 +19,7 @@ namespace Utils.Menu
         /// </summary>
         public int MenuPosition { get; set; }
 
-        public CollectionEnumerations Type { get; }
+        public Enum Type { get; }
 
         public MenuItem(string text)
         {
@@ -27,7 +27,7 @@ namespace Utils.Menu
             MenuPosition = 0;
         }
 
-        public MenuItem(string text, CollectionEnumerations type)
+        public MenuItem(string text, Enum type)
         {
             MenuText = text;
             MenuPosition = 0;
@@ -57,7 +57,7 @@ namespace Utils.Menu
         /// </summary>
         public int Position { get; private set; }
 
-        public CollectionEnumerations Type { get; private set; }
+        public Enum Type { get; private set; }
 
         /// <summary>
         /// Конструктор класса меню
