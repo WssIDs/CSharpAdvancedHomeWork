@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace HomeWork5._2
 {
@@ -6,7 +7,13 @@ namespace HomeWork5._2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var countries = CityRepository.GetCountries();
+            var streets = countries.Select(county => county.District.City.Neighborhood.StreetName);
+
+            foreach (var street in streets)
+            {
+                Console.WriteLine(street);
+            }
         }
     }
 }
